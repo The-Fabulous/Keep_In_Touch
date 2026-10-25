@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Keep in Touch — новые знакомства, близкие по духу люди и целый мир между вами.">
+  <title>Keep in Touch — ближе, чем кажется</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/></symbol>
+    <symbol id="i-exit" viewBox="0 0 24 24"><path d="M9 4H4v16h5m6-13 5 5-5 5M9 12h11"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 5a5 5 0 0 0-8 1 5 5 0 0 0-8-1c-5 5 8 15 8 15S25 10 20 5Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 5v2"/></symbol>
+  </svg>
+
+  <section id="welcome" class="welcome">
+    <div class="welcome-form-side">
+      <a class="brand" href="#welcome" aria-label="Keep in Touch — главная"><span class="brand-mark">k<span>↗</span></span><span>keep in touch<span class="brand-dot">.</span></span></a>
+      <div class="welcome-copy">
+        <span class="eyebrow"><span class="tiny-star">✳</span> МИР ПОЛОН ТВОИХ ЛЮДЕЙ</span>
+        <h1>Расстояния есть.<br><em>Границ — нет.</em></h1>
+        <p class="intro">Находи тех, с кем можно быть собой.<br>За углом или на другом конце света.</p>
+        <form id="login-form" class="login-form">
+          <label for="login">Логин или почта</label>
+          <div class="input-wrap"><svg class="icon"><use href="#i-user"/></svg><input id="login" name="login" type="text" autocomplete="username" placeholder="hello@yourworld.com"></div>
+          <label for="password">Пароль</label>
+          <div class="input-wrap"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Твой маленький секрет"><button type="button" id="toggle-password" class="icon-button" aria-label="Показать пароль" aria-pressed="false"><svg class="icon"><use href="#i-eye"/></svg></button></div>
+          <button type="submit" class="button primary login-submit">Войти <svg class="icon"><use href="#i-arrow"/></svg></button>
+          <p id="login-note" class="form-note" role="status">Это прототип. Вход появится чуть позже.</p>
+        </form>
+        <div class="or-divider"><span></span> или просто посмотри <span></span></div>
+        <button id="skip-login" class="button skip-button">Пропустить и исследовать мир <svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+      <div class="welcome-footer"><span>Меньше скролла. Больше связи.</span><span>© 2026 KIT</span></div>
+    </div>
+    <div class="welcome-art">
+      <span class="art-topline"><span class="status-dot"></span> БОЛЬШОЙ МИР. БЛИЗКИЕ ЛЮДИ.</span>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-globe-wrap"><canvas id="hero-globe" aria-label="Иллюстрация земного шара"></canvas></div>
+      <div class="floating-person float-one"><img src="./assets/avatar-1.svg" alt="" width="46" height="46"><div><strong>Амина</strong><span>Алматы, Казахстан</span></div><span class="wave">✌️</span></div>
+      <div class="floating-person float-two"><img src="./assets/avatar-3.svg" alt="" width="46" height="46"><div><strong>Лео</strong><span>Лиссабон, Португалия</span></div><span class="wave">☀️</span></div>
+      <span class="hello-sticker">hello, world <span>↗</span></span>
+      <div class="art-caption"><span class="caption-star">✳</span><h2>Твой человек может<br>быть <em>где угодно.</em></h2><p>Одно «привет» — и вы уже ближе.</p></div>
+      <div class="art-bottom"><span>СОЗДАНО ДЛЯ НАСТОЯЩИХ ЗНАКОМСТВ</span><span>↗</span></div>
+    </div>
+  </section>
+
+  <div id="application" class="application" hidden>
+    <aside class="sidebar">
+      <a class="brand" href="#discover"><span class="brand-mark">k<span>↗</span></span><span>keep in touch<span class="brand-dot">.</span></span></a>
+      <div class="sidebar-section-label">ТВОЁ ПРОСТРАНСТВО</div>
+      <nav aria-label="Главная навигация">
+        <a href="#discover" class="nav-link active" data-route="discover" aria-label="Поиск друзей"><svg class="icon"><use href="#i-globe"/></svg><span>Поиск друзей</span><span class="nav-indicator"></span></a>
+        <a href="#profile" class="nav-link" data-route="profile" aria-label="Мой профиль"><svg class="icon"><use href="#i-user"/></svg><span>Мой профиль</span></a>
+      </nav>
+      <div class="sidebar-note"><span>✳</span><h3>Мир становится<br>ближе с тобой.</h3><p>Начни с простого «привет».</p><div class="note-line"></div></div>
+      <div class="sidebar-bottom"><span class="demo-label"><span></span> Демо-пространство</span><button id="sidebar-profile" class="sidebar-profile"><img src="./assets/avatar-0.svg" alt="" width="39" height="39"><span><strong id="sidebar-name">Алекс</strong><small>Твой профиль</small></span><svg class="icon"><use href="#i-arrow"/></svg></button><button id="sign-out" class="exit-button"><svg class="icon"><use href="#i-exit"/></svg> На экран входа</button></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><span id="breadcrumb">Мир / <strong>Поиск друзей</strong></span><div class="topbar-right"><span class="prototype-tag">ПРОТОТИП</span><span class="topbar-greeting">Хороший день для знакомства <span>✳</span></span></div></header>
+      <section id="discover-page" class="page discover-page" aria-labelledby="discover-title">
+        <div class="page-heading"><div><span class="eyebrow">СВЯЗЬ НАЧИНАЕТСЯ С ЛЮБОПЫТСТВА</span><h1 id="discover-title" tabindex="-1">Ближе, чем кажется<span class="purple">.</span></h1><p>Покрути мир. Найди своих.</p></div><div class="community-pill"><div class="avatar-stack"><img src="./assets/avatar-1.svg" alt=""><img src="./assets/avatar-2.svg" alt=""><img src="./assets/avatar-3.svg" alt=""></div><span><strong>6 историй</strong><small>ждут знакомства</small></span></div></div>
+        <div class="discovery-layout">
+          <section class="globe-card" aria-label="Интерактивная карта людей">
+            <div class="globe-card-top"><span class="live-pill"><span class="status-dot"></span> ЛЮДИ БЕЗ ГРАНИЦ</span><span class="map-coordinates" id="map-coordinates">25° N · 45° E</span></div>
+            <div class="map-intro"><h2>Целый мир.<br><em>Твои люди.</em></h2><p>Любое место может стать<br>началом дружбы.</p></div>
+            <div class="map-canvas-wrap"><canvas id="world-globe" tabindex="0" role="img" aria-label="Вращающийся глобус. Перетаскивайте мышью или используйте стрелки клавиатуры. Масштаб меняется кнопками плюс и минус."></canvas></div>
+            <div class="map-selected" id="map-selected"></div>
+            <div class="globe-controls"><button id="zoom-in" class="icon-button" aria-label="Увеличить глобус">+</button><button id="zoom-out" class="icon-button" aria-label="Уменьшить глобус">−</button><span></span><button id="reset-globe" class="icon-button" aria-label="Вернуть глобус в исходное положение">↺</button></div>
+            <div class="map-bottom"><span><span class="drag-icon">↔</span> Потяни, чтобы открыть новый уголок мира</span><span class="map-scale">ЗЕМЛЯ · 01</span></div>
+          </section>
+          <aside class="people-panel" aria-label="Поиск людей"><div class="people-heading"><h2>Возможно, твои люди</h2><span id="people-count">06</span></div><p class="panel-subtitle">Разные города. Что-то общее.</p><label class="search-field"><svg class="icon"><use href="#i-search"/></svg><input id="people-search" type="search" aria-label="Поиск по имени, городу или интересу" placeholder="Имя, город или интерес"></label><div class="filter-tabs" role="group" aria-label="Фильтр людей"><button class="filter-tab active" data-filter="all" aria-pressed="true">Все</button><button class="filter-tab" data-filter="online" aria-pressed="false"><span class="status-dot"></span> В сети</button><button class="filter-tab" data-filter="shared" aria-pressed="false">По интересам</button></div><div id="people-list" class="people-list"></div><div class="people-footnote"><svg class="icon"><use href="#i-spark"/></svg><span>Иногда всё начинается<br>с одного общего интереса.</span></div></aside>
+        </div>
+        <footer class="page-footer"><span>Хорошие знакомства случаются, когда ты открыт миру.</span><span>STAY CURIOUS. KEEP IN TOUCH. ↗</span></footer>
+      </section>
+      <section id="profile-page" class="page profile-page" hidden aria-labelledby="profile-title">
+        <div class="page-heading"><div><span class="eyebrow">ТВОЯ МАЛЕНЬКАЯ ВСЕЛЕННАЯ</span><h1 id="profile-title" tabindex="-1">Привет, это ты<span class="purple">.</span></h1><p>Расскажи о себе. Своим людям будет легче тебя найти.</p></div><button id="edit-profile" class="button primary"><svg class="icon"><use href="#i-edit"/></svg> Редактировать</button></div>
+        <div class="profile-cover"><span class="cover-word">nice to meet you.</span><span class="cover-spark">✳</span><span class="cover-small">ОДИН МИР. МИЛЛИОНЫ ИСТОРИЙ. ТВОЯ — ОСОБЕННАЯ.</span></div>
+        <div class="profile-layout"><div class="profile-identity"><div class="profile-avatar"><img src="./assets/avatar-0.svg" alt="Иллюстрация аватара профиля"><span class="profile-online" aria-label="В сети"></span></div><span class="profile-handle">@hello.alex</span><h2 id="profile-name">Алекс</h2><div class="profile-location"><svg class="icon"><use href="#i-pin"/></svg><span id="profile-city">Алматы, Казахстан</span></div><span class="open-pill">✳ Открыт к новым знакомствам</span><div class="profile-stats"><div><strong id="connection-count">0</strong><span>симпатий</span></div><div><strong>∞</strong><span>возможностей</span></div></div></div><div class="profile-details"><section class="detail-card"><span class="card-kicker">НЕМНОГО ОБО МНЕ</span><h3>За каждым профилем — человек.</h3><p id="profile-bio">Собираю моменты, а не вещи. Люблю спонтанные прогулки, плёночные фотографии и разговоры, после которых забываешь про время. Давай найдём что-то общее?</p></section><section class="detail-card"><span class="card-kicker">НА ОДНОЙ ВОЛНЕ</span><h3>То, что меня вдохновляет</h3><div id="profile-interests" class="profile-interest-list"></div></section><div class="profile-bottom-note"><svg class="icon"><use href="#i-globe"/></svg><p>Где-то прямо сейчас есть человек,<br>который тоже ищет такого друга, как ты.</p><a href="#discover" class="text-link">Найти своих <span>↗</span></a></div></div></div>
+      </section>
+    </main>
+  </div>
+  <dialog id="edit-dialog"><form id="edit-form"><div class="dialog-heading"><div><span class="eyebrow">НЕМНОГО БОЛЬШЕ ТЕБЯ</span><h2>Твой профиль</h2></div><button type="button" class="icon-button close-dialog" aria-label="Закрыть"><svg class="icon"><use href="#i-close"/></svg></button></div><label for="edit-name">Имя</label><input id="edit-name" name="name" maxlength="40" required><label for="edit-city">Город и страна</label><input id="edit-city" name="city" maxlength="70" required><label for="edit-bio">О себе</label><textarea id="edit-bio" name="bio" maxlength="400" rows="4" required></textarea><fieldset><legend>Твои интересы</legend><div id="edit-interests" class="interest-options"></div></fieldset><p class="form-note">Изменения сохраняются только в этом браузере.</p><button type="submit" class="button primary">Сохранить <svg class="icon"><use href="#i-check"/></svg></button></form></dialog>
+  <dialog id="person-dialog"><div id="person-details"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

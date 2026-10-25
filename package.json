@@ -1,0 +1,14 @@
+{
+  "name": "keep-in-touch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Красивый интерактивный прототип социальной сети Keep in Touch",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node --check globe.js && node --check scripts/server.mjs && node --check scripts/build.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
